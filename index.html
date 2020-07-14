@@ -4,9 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>Document</title> 
+    <link rel="stylesheet" href="./css/mian.css" type="text/css" />
+    <link rel="stylesheet" href="./fonts/font-awesome.min.css" type="text/css" />
+    <link rel="stylesheet" href="./fonts/stmicons.css" type="text/css" />
+    <style type="text/css">     
+      .container{
+        /* max-width: 1024px; */
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px;
+        font-size: 14px;
+      }
+      .preview {
+          display: flex;
+          flex-wrap: wrap;
+          text-align: center;
+          padding: 5px;
+      }
+
+      .preview {
+        flex: 1 1 auto;
+        flex-direction: row;
+        display: flex;
+      }
+      .preview img {
+        display: block;
+        width: 200px;
+        height: auto;
+      }
+      .active {
+        outline: 3px solid #196cd2;
+        box-shadow: 2px 2px 20px 4px rgba(0,0,0,.5);
+      }
+    </style>
 </head>
 <body>
-    
+    <div id="wrapper">
+        <div class="header"></div>
+        <div class="container">
+            <div class="slider-container">
+              <div class="slider">
+                <div class="slider__item baner1"></div>
+                <div class="slider__item baner2"></div>
+                <div class="slider__item baner3"></div>
+                <div class="slider__item baner4"></div>
+                <div class="slider__item baner5"></div>
+                <div class="slider__item baner6"></div>                
+                <div class="slider__item baner7"></div>
+                <div class="slider__item baner8"></div>
+              </div>
+            </div>
+            <div class="preview">
+              <div class="pre_list">
+                <span class="fa fa-cube mtc"></span>
+                <p>UNITY发行门户</p>
+              </div>
+              <div class="pre_list">
+                <span class="fa fa-globe mtc"></span>
+                <p>中国市场</p>
+              </div>
+              <div class="pre_list">
+                <span class="fa fa-key mtc"></span>
+                <p>单交钥匙</p>
+              </div>
+              <div class="pre_list">
+                <span class="fa fa-gears mtc"></span>
+                <p>超级SDK</p>
+              </div>
+              <div class="pre_list">
+                  <span class="fa fa-shield mtc"></span>
+                  <p>知识产权保护</p>
+              </div>
+              <div class="pre_list">
+                  <span class="fa fa-money mtc"></span>
+                  <p> 合作伙伴融资计划  </p>
+              </div>
+              <div class="pre_list">
+                  <span class="fa fa-bullhorn mtc"></span>
+                  <p>广告获利</p>
+              </div>
+              <div class="pre_list">
+                  <span class="fa fa-check-circle mtc"></span>
+                  <p>APPTUTTi验证程序</p>
+              </div>
+              <!-- <a href="#1"><img src="images/1.png" alt="" /></a>
+              <a href="#2"><img src="images/2.png" alt="" /></a>
+              <a href="#3"><img src="images/3.png" alt="" /></a> -->
+            </div>
+            <!-- </div> -->
+        <!-- <div id="slide">
+            <ul class="list">
+              <li><a href="javascript:;"><img src="./image/Unity-Banner-1920x900.jpg" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/website-banner-4.jpg" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/website-banner-11-1.jpg" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/website-banner-09-2.jpg" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/website-banner-10-1.jpg" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/Ads-Monetization-2-15-1920x900.png" alt=""></a></li>
+              <li><a href="javascript:;"><img src="./image/Artboard-1-copy-14.png" alt=""></a></li>
+            </ul>
+        </div> -->
+    </div>
+    <div class="footer"></div>
+  <script src="./js/jquery/jquery.js" ></script>
+  <script src="./js/swiper.js"></script>
+  <script type="text/javascript">
+		$(".slider-container").ikSlider({
+		  speed: 500
+		});
+		$(".slider-container").on('changeSlide.ikSlider', function (evt) { console.log(evt.currentSlide); });
+	</script>
+<script type="text/javascript">
+		var $preview = $('.preview div');
+
+		function changeActivePreview(i) {
+		  $('.active').removeClass('active');
+		  $preview.eq(i).addClass('active');
+		}
+
+		$preview.on('click', function(e) {
+		  e.preventDefault();
+		  var index = $(this).index();
+		  $('.slider-container').ikSlider(index);
+		});
+
+		$('.slider-container').on('changeSlide.ikSlider', function(e) {
+		  changeActivePreview(e.currentSlide);
+		});
+
+		changeActivePreview(0)
+	</script>
 </body>
 </html>

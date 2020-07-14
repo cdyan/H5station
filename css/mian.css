@@ -1,0 +1,217 @@
+/*swiper*/
+
+#wrapper{position: relative;
+  padding-bottom: 60px;
+  overflow: hidden;
+  z-index: 100;}
+  *{
+    padding: 0;margin: 0;
+}
+ul,li{list-style: none}
+*{
+  box-sizing:border-box;
+  vertical-align: baselinebaseline;    
+  font-family: inherit;    
+  font-style: inherit;    
+  font-size: 100%;    
+  border: none;    
+ 
+}
+*, *:before, *:after {
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box
+}
+.slider-container {
+  position:relative;
+  overflow:hidden;
+  width:100%;
+  margin:0 auto;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+.slider {
+  position:relative;
+  width:100%;
+  height: 900px;
+}
+.slider:before, .slider:after {
+  display:table;
+  content:' '
+}
+.slider:after {
+  clear:both
+}
+.slider__item {
+  float:left;
+  margin:0;
+  padding:0;
+  height:100%;
+  position: relative;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+.baner1{background-image: url("../image/Ads-Monetization-2-15-1920x900.png")}
+.baner2{background-image: url("../image/website-banner-14.jpg")}
+.baner3{background-image: url("../image/website-banner-11-1.jpg")}
+.baner4{background-image: url("../image/website-banner-09-2.jpg")}
+.baner5{background-image: url("../image/website-banner-10-1.jpg")}
+.baner6{background-image: url("../image/website-banner-06.jpg")}
+.baner7{background-image: url("../image/Ads-Monetization-2-15-1920x900.png")}
+.baner8{background-image: url("../image/Artboard-1-copy-14.png")}
+.slider__item img {
+  display:block;
+  max-width:100%;
+  height:auto
+}
+.slider__switch span {
+  color:#fff;
+  display:block;
+  width:32px;
+  height:32px
+}
+.slider__switch {
+  position:absolute;
+  top:50%;
+  margin-top:-20px;
+  padding:10px 5px;
+  cursor:pointer;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  -o-user-select:none;
+  user-select:none;
+  border-radius:1px;
+  background:#000;
+  opacity:.3;
+  transition:opacity .15s ease;
+  fill:#fff
+}
+.slider__switch--prev {
+  left:10px
+}
+.slider__switch--next {
+  right:10px
+}
+.slider__switch:hover {
+  opacity:.85
+}
+.slider__switch[disabled] {
+  visibility:hidden;
+  opacity:0
+}
+.slider__caption {
+  position:absolute;
+  bottom:30px;
+  left:30px;
+  display:block;
+  max-width:500px;
+  padding:10px;
+  color:#fff;
+  background:rgba(0, 0, 0, .4);
+  box-shadow:0 0 10px 10px rgba(0, 0, 0, .1);
+  filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#99000000', endColorstr='#99000000')
+}
+.slider__caption[disabled] {
+  opacity:0;
+  visibility:hidden
+}
+.slider-nav {
+  line-height:30px;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  height:30px;
+  margin:0;
+  padding:0;
+  text-align:center;
+  z-index:99999;
+  filter:alpha(opacity=90)
+}
+.slider-nav__control {
+  display:inline-block;
+  /* width:12px;
+  height:12px; */
+  /* margin:0 3px; */
+  -webkit-transition:background .5s ease;
+  -moz-transition:background .5s ease;
+  -o-transition:background .5s ease;
+  transition:background .5s ease;
+  /* border:2px solid #fff; */ 
+ /* border-radius:50%; */
+  /* background:0 0 */
+}
+/* .slider-nav__control.is-active {
+  width:12px;
+  height:12px;
+  background:#fff
+} */
+.slider.has-touch {
+  cursor:move;
+  cursor:-webkit-grabbing;
+  cursor:-moz-grabbing
+}
+@media(max-width:580px) {
+  .slider__switch {
+      display:none
+  }
+  .slider__caption {
+      display:none
+  }
+}
+
+.preview {
+display: flex;
+flex-wrap: wrap;
+text-align: center;
+flex: 1 1 auto;
+flex-direction: row;
+padding-right: 15px;
+padding-left: 15px;
+margin-right: auto;
+margin-left: auto;
+}
+.pre_list{
+  border-color: #e6e6e6 !important;
+  background-color: #f2f3f5 !important;
+  -ms-flex-align: center !important;
+  align-items: center !important;
+  display: -ms-flexbox;
+  -ms-flex: 1;
+  flex: 1;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  color: #fff;
+  background: #2a2a2a;
+  position: relative;
+  cursor: pointer;
+  transition: .3s ease;
+  padding: 29px 0 30px 25px;
+}
+.pre_list:not(:last-child) {
+  border-right: 1px solid rgba(230, 230, 230, 0.25);
+}
+.pre_list p{
+  font-family: 'Lato';
+  color: #222222;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  line-height: 1.714em;
+  margin-bottom:18px;
+  margin-right:15px;
+}
+.pre_list>.fa>p{
+  display: inline-block;
+  margin-bottom:18px !important;
+}
+.pre_list span {
+  font-size:50px;
+  color: #ec1111 !important;
+}
+
