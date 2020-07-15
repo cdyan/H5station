@@ -84,9 +84,6 @@ ul,li{list-style: none}
   -ms-user-select:none;
   user-select:none
 }
-.stm-header__row_color_center:before {
-  background-color: rgb(219, 0, 0);
-}
 @media (min-width: 1200px){
 .preview{
     width: 1220px;
