@@ -8,40 +8,41 @@
     <link rel="stylesheet" href="./css/mian.css" type="text/css" />
     <link rel="stylesheet" href="./fonts/font-awesome.min.css" type="text/css" />
     <link rel="stylesheet" href="./fonts/stmicons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/Basic.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/public.css" type="text/css"/>
+    <link rel="stylesheet" href="./fonts/font-awesome.min.css" type="text/css"/>
+    <link rel="stylesheet" href="./css/style_1.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style1_1.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style_2.css" type="text/css"/>
+    <link rel="stylesheet" href="./fonts/stmicons.css" type="text/css" />
+    <link rel="stylesheet" href="./css/style_19.css" type="text/css"/>
     <style type="text/css">     
       .container{
         /* max-width: 1024px; */
         width: 100%;
         margin: 0 auto;
-        padding: 20px;
         font-size: 14px;
       }
-      .preview {
-          display: flex;
-          flex-wrap: wrap;
-          text-align: center;
-          padding: 5px;
-      }
-
-      .preview {
-        flex: 1 1 auto;
-        flex-direction: row;
-        display: flex;
-      }
+   
       .preview img {
         display: block;
         width: 200px;
         height: auto;
       }
       .active {
-        outline: 3px solid #196cd2;
-        box-shadow: 2px 2px 20px 4px rgba(0,0,0,.5);
+        background-color:#ec1111;
+        /* outline: 3px solid #196cd2;
+        box-shadow: 2px 2px 20px 4px rgba(0,0,0,.5); */
       }
+      .active>.fa,.active p{color:#fff}
     </style>
 </head>
 <body>
     <div id="wrapper">
-        <div class="header"></div>
+      <!-- heder -->
+        <div id="hederBox">
+          
+        </div>
         <div class="container">
             <div class="slider-container">
               <div class="slider">
@@ -53,6 +54,110 @@
                 <div class="slider__item baner6"></div>                
                 <div class="slider__item baner7"></div>
                 <div class="slider__item baner8"></div>
+              </div>
+              <div class="stm-header__row_color stm-header__row_color_top">
+                  <div class="container_msg">
+                      <div class="stm-header__row stm-header__row_top">
+                          <div class="stm-header__cell stm-header__cell_right">
+                              <!--内容  -->
+                             <div class="stm-header__element object424 stm-header__element_">
+                                <div class="stm-icontext">
+                                    <i class="stm-icontext__icon mtc stmicon-bon-envelope fsz_14"></i>
+                                    <span class="stm-icontext__text fsz_16">
+                                      <font style="vertical-align: inherit;">
+                                        <font style="vertical-align: inherit;">info@apptutti.com</font>
+                                      </font>
+                                    </span>
+                                    <span class="paddingR20 borderR"></span>
+                                </div>
+                              </div>
+                              
+                              <!-- 图标 -->
+                              <div class="stm-header__element object466 stm-header__element_square">
+                                     <div class="stm-socials">
+                                         <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_square">
+                                             <i class="fa fa-facebook"></i>
+                                         </a>
+                                         <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_square">
+                                             <i class="fa fa-twitter"></i>
+                                         </a>
+                                         <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_square">
+                                             <i class="fa fa-linkedin"></i>
+                                         </a>
+                                         <a href="#" class="stm-socials__icon icon_16px stm-socials__icon_square">
+                                             <i class="fa fa-youtube"></i>
+                                         </a>
+                                     </div>
+                              </div>
+                              <!-- 登录注册 -->
+                              <div class="stm-header__element object628 stm-header__element_default">
+                                 <div class="div">
+                                     <a href="#" class="logon">登录</a>
+                                     |
+                                     <a href="#" class="register">注册</a>
+                                 </div>
+                              </div>
+                              <!-- 搜索框 -->
+                              <div class="stm-header__element object494 stm-header__element_">
+                                     <div class="stm-search stm-search_style_1">
+                                        <a href="#" data-toggle="modal" data-target="#searchModal" class="mbdc wtc_h mbc_h hidden-sm hidden-xs">
+                                            <i class="stm-search__icon stm-search__icon_rounded icon_14px  fa fa-search"></i>
+                                        </a>
+                                     </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="stm-header__row_color stm-header__row_color_center">
+                <div class="container_nav">
+                    <div class="stm-header__row stm-header__row_center">
+                        <div class="stm-header__cell stm-header__cell_left paddingL">
+                             <div class="stm-logo">
+                                 <a href="#">
+                                     <img width="623" height="124" style="width: 224px;" src="../image/white-logo.png" alt="site_log" class="attachment-full size-full">
+                                 </a>
+                             </div>
+                        </div>
+                        <div class="stm-header__cell stm-header__cell_right">
+                            <div class="stm-header__element object1285 stm-header__element_default">
+                                <div class="stm-navigation heading_font stm-navigation__default stm-navigation__default stm-navigation__line_bottom stm-navigation__fwn">
+                                    <ul>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-8791">
+                                            <a href="#">Home</a>
+                                        </li>
+                                        <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8780">
+                                         <a href="">About</a>
+                                         </li>
+                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11510">
+                                         <a href="">Stores</a>
+                                         </li>
+                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-11510">
+                                             <a href="">Services</a>
+                                             <ul>
+                                                 <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11157 stm_col_width_default stm_mega_cols_inside_default"><a href="">Standard Package (RSPP)</a></li>
+                                                 <li class="menu-item menu-item-type-post_type menu-item-object-stm_services menu-item-11513 stm_col_width_default stm_mega_cols_inside_default"><a href="">Premium Package (DDCP)</a></li>
+                                                 <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8793 stm_col_width_default stm_mega_cols_inside_default"><a href="">Partner Financing Program</a></li>
+                                             </ul>
+                                         </li>
+                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-12324">
+                                         <a href="">News</a>
+                                         </li>
+                                         <li class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-4281 current_page_item menu-item-8782">
+                                         <a href="">FAQs</a>
+                                         </li>
+                                         <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8781">
+                                         <a href="">Contact us</a>
+                                         </li>
+                                         <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-11069">
+                                         <a href="">Try it for Free!</a>
+                                         </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
               </div>
             </div>
             <div class="preview">
@@ -73,41 +178,27 @@
                 <p>超级SDK</p>
               </div>
               <div class="pre_list">
-                  <span class="fa fa-shield mtc"></span>
-                  <p>知识产权保护</p>
+                <span class="fa fa-shield mtc"></span>
+                <p>知识产权保护</p>
               </div>
               <div class="pre_list">
-                  <span class="fa fa-money mtc"></span>
-                  <p> 合作伙伴融资计划  </p>
+                <span class="fa fa-money mtc"></span>
+                <p> 合作伙伴融资计划  </p>
               </div>
               <div class="pre_list">
-                  <span class="fa fa-bullhorn mtc"></span>
-                  <p>广告获利</p>
+                <span class="fa fa-bullhorn mtc"></span>
+                <p>广告获利</p>
               </div>
               <div class="pre_list">
-                  <span class="fa fa-check-circle mtc"></span>
-                  <p>APPTUTTi验证程序</p>
+                <span class="fa fa-check-circle mtc"></span>
+                <p>APPTUTTi验证程序</p>
               </div>
-              <!-- <a href="#1"><img src="images/1.png" alt="" /></a>
-              <a href="#2"><img src="images/2.png" alt="" /></a>
-              <a href="#3"><img src="images/3.png" alt="" /></a> -->
             </div>
-            <!-- </div> -->
-        <!-- <div id="slide">
-            <ul class="list">
-              <li><a href="javascript:;"><img src="./image/Unity-Banner-1920x900.jpg" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/website-banner-4.jpg" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/website-banner-11-1.jpg" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/website-banner-09-2.jpg" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/website-banner-10-1.jpg" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/Ads-Monetization-2-15-1920x900.png" alt=""></a></li>
-              <li><a href="javascript:;"><img src="./image/Artboard-1-copy-14.png" alt=""></a></li>
-            </ul>
-        </div> -->
     </div>
     <div class="footer"></div>
   <script src="./js/jquery/jquery.js" ></script>
   <script src="./js/swiper.js"></script>
+  <!-- <script src="./js/toogle.js"></script> -->
   <script type="text/javascript">
 		$(".slider-container").ikSlider({
 		  speed: 500
@@ -116,12 +207,10 @@
 	</script>
 <script type="text/javascript">
 		var $preview = $('.preview div');
-
 		function changeActivePreview(i) {
 		  $('.active').removeClass('active');
-		  $preview.eq(i).addClass('active');
+      $preview.eq(i).addClass('active');
 		}
-
 		$preview.on('click', function(e) {
 		  e.preventDefault();
 		  var index = $(this).index();
