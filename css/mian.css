@@ -101,6 +101,18 @@ ul,li{list-style: none}
 .stm-header .stm-navigation__default>ul>li.current-menu-item>a{
   border-color: rgba(255, 255, 255, 0.8)!important;
 }
+
+.wraFlex_L{
+  width:480px;
+  float: left;
+}
+.wraFlex_r{width:615px;float:left;margin-left: 50px;}
+.warpFloat{
+  display: flex;
+}
+.stm-button a:link,.stm-button a:visited{
+  color: #4e4e4e !important;
+}
 @media (min-width: 1200px){
 .preview{
     width: 1220px;
@@ -115,6 +127,7 @@ ul,li{list-style: none}
 .container{padding:0}
 .stm_slide__overlay{
   width: 600px;
+  line-height: 50px;
   position: absolute;
   left: 50%;
   top: 50%;
@@ -125,36 +138,67 @@ ul,li{list-style: none}
   line-height: 28px;
   color: #fff;
 }
-.stm_slide__button .btnBorder{
+
+.width8 span{
+  display: block;
+    max-width: 600px;
+    position: relative;
+    letter-spacing: -2.5px;
+    line-height: 50px;
+    font-weight: 600;
+    font-size: 50px;
+    font-family: 'Lato'
+
+}
+.stmTransform{
+  width: 700px;
+  transform: translate(-84%, -50%);
+}
+.nav_two span{
+  max-width:700px;
+  font-weight: 500;
+  font-family: 'Lato'
+}
+.marginT{margin-top:6%}
+.stm_slide__button .btnBorder,.stm-button .btnBorder{ 
   border:2px solid #e51c1c;
   border-radius:8px;
   font-size:14px;
   font-weight: 700;
 }
+.stm-button .btnBorder{padding:10px 20px}
 .stm_slide__button a:link,.stm_slide__button a:visited{
   color: #fff!important;
 }
-.stm_slide__button a:hover{
+.stm_slide__button a:hover,.stm-button_left a:hover{
   background-color:  #e51c1c!important;
   color: #4e4e4e!important;
+  text-decoration: none;
 }
 
 .stm_slide__title{
   font-size:50px;
+  line-height: 115%;
   font-weight: 600;
   color: #fff!important;
 }
 .stm_slide__content{
   padding:50px 0
 }
-.btnBorder font{
+.btnBorder,.btnBorder font{
   display: inline-block;
   text-align: center;
   padding-top: 2px;
   padding-bottom: 2px;
-  padding-left:5px;
+  padding-left:10%;
 }
-
+.paddingLR{
+  padding-left:5%;
+  padding-right:5%
+}
+.container .vc_container{
+  transform: translate(4%, 0);
+}
 }
 .slider {
   position:relative;
