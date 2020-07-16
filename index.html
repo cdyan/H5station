@@ -22,6 +22,7 @@
         width: 100%;
         margin: 0 auto;
         font-size: 14px;
+        padding: 0;
       }
    
       .preview img {
@@ -154,7 +155,8 @@
                     <div class="container">
                         <div class="stmTransform stm_slide__overlay">   
                             <div class="width8 nav_two stm_slide__title text-center;">
-                                <span>Live NOW at Unity Distribution Portal (UDP)</span>
+                                <p><span>Live NOW at Unity Distribution Portal (UDP)</span></p>
+
                             </div>                                    
                             <div class="marginT stm_slide__button text-center;">
                                 <a class="btn btn_left btn_icon-bg btn_icon-right btnBorder paddingLR" href="https://unity.com/unity-distribution-portal">Publish Now!</a> 
@@ -335,7 +337,7 @@
               </div>
             </div>
             <!-- 第三部分 -->
-            <div class="container vc_container">
+            <!-- <div class="container vc_container cont_margintB">
                 <div class="vc_row wpb_row vc_row-fluid">
                     <div class="wpb_column vc_column_container vc_col-sm-12">
                         <div class="vc_column-inner ">
@@ -369,7 +371,7 @@
                                             <div class="wpb_wrapper wrapFlex">
                                                 <div class="wpb_raw_code wpb_content_element wpb_raw_html">
                                                     <div class="wpb_wrapper wraFlex_r">
-                                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gDNqxAcyT7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                                                        <iframe width="615" height="315" src="https://www.youtube.com/embed/gDNqxAcyT7Q" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
                                                     </div>
                                                 </div>
                                             </div>
@@ -393,18 +395,82 @@
                         </div>
                     </div>
                 </div>
+            </div> -->
+             <!-- 第四部分 -->
+            <div class="cont_services">
+                <div class="cont_ser_top">
+                    <span class="vc_sep_holder vc_sep_holder_l"></span>
+                    <h4>SERVICES</h4>
+                    <span class="vc_sep_holder vc_sep_holder_l"></span>
+                </div>
+                <h3 class="textAlign">Two packages to suit your needs</h3>
+                <div class="cols">
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container_box">
+                            <div class="front cont_ser_pic_left_A">
+                                <div class="inner">
+                                    <h5>Standard (RSPP)</h5>
+                                    <h2 class="stm_pricing-table__price">$0</h2>
+                                    <h5>Free publication into 3 major app stores.</h5>
+                                </div>
+                            </div>
+                            <div class="back cont_ser_pic_left_B">
+                                <div class="inner">
+                                     <!-- 这里缺个图标 -->
+                                    <i class="stm_back_bg_icon stmicon-uniE69C"></i>
+                                    <p><strong><span style="color: #ffffff;">RSPP (Register, Submit, Plug, Publish) is designed for mobile app and game developers and owners who wish to enter China and Unexplored markets, this package covers all the basic requirements to help you launch your creations in those markets. Perfect for those who wish to trial our services</span></strong></p>
+                                    <a href="https://www.apptutti.com/corporate/services/rspp-services/" class="btn btn_primary btn_outline btn_default btn_white border_Radius8" target=" _blank">
+                                    <span>Learn More</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col" ontouchstart="this.classList.toggle('hover');">
+                        <div class="container_box">
+                            <div class="front cont_ser_pic_right_A">
+                                <div class="inner">
+                                    <h5>Premium (DDCP)</h5>
+                                    <h2 class="stm_pricing-table__price">FREE</h2>
+                                    <h5>(Invitation Only) Services tailored to your needs with strong cooperation between you and APPTUTTi</h5>
+                                </div>
+                            </div>
+                            <div class="back cont_ser_pic_right_B">
+                                <div class="inner">
+                                    <!-- 这里缺个图标 -->
+                                    <i class="stm_back_bg_icon stmicon-uniE69E"></i>
+                                    <i class="stm_back_bg_icon stmicon-uniE69E"></i>
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">Features of Standard (RSPP)</span></strong></h4> 
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">Customized technical support</span></strong></h4> 
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">User acquisition</span></strong></h4> 
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">Local marketing support</span></strong></h4> 
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">IP registration &amp; protection</span></strong></h4> 
+                                    <h4 style="text-align: center;"><strong><span style="color: #ffffff;">Optimization consultation</span></strong></h4> 
+                                    <div id="gtx-trans" style="position: absolute; left: 321px; top: 269.594px;"> 
+                                    <div class="gtx-trans-icon"></div> 
+                                    </div> 
+                                    <a href="https://www.apptutti.com/corporate/our-services/premium-ddcp-2/" class="btn btn_primary btn_outline btn_default btn_white border_Radius8" target=" _blank"> <span>Read more</span> </a> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            
+
     </div>
     <div class="footer"></div>
   <script src="./js/jquery/jquery.js" ></script>
   <script src="./js/swiper.js"></script>
   <!-- <script src="./js/toogle.js"></script> -->
   <script type="text/javascript">
+
 //   导航选中切换
     $('.stm-navigation ul li').on('click',function(){
         $(this).siblings().removeClass('navActive'); 
         $(this).addClass('navActive'); 
     })
+
 
     $(".slider-container").ikSlider({
         speed: 500
