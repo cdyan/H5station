@@ -376,6 +376,72 @@ ul,li{list-style: none}
     border-radius: 8px;
     padding:10px 15px
   }
+  /*第五部分*/
+  .vc_custom_1530845719667{
+    background-image: url(../image/Banner-New-site555.png) !important;
+    background-position:34% center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
+  .warp_flex_box{
+    display: flex;
+    justify-content:space-around;
+    padding-bottom: 100px;
+  }
+  .warp_flex_box>.vc_row{
+    width:70%;
+    padding-left: 7%;
+  }
+  .warp_flex_box>.vc_row>.container{
+    margin-left: 40px;
+  }
+  .flex_box{
+    /* margin-left:60px; */
+  }
+  .row_1{
+    width: calc(20%);
+    float: left;
+  }
+  .flex_box>.flex1{
+    padding-left:30px
+  }
+  .marginL30{
+    margin-left:30px;
+  }
+  .vc_column-gap-25{
+    margin-left: -27.5px; 
+    margin-right: -27.5px
+  }
+  .marginL27{
+    margin-left: -27.5px; 
+  }
+  .no_line{
+    font-weight:300;
+    line-height:40px;
+    padding-top:30px;
+  }
+  .cont_ser_top_border{
+    display: flex;
+  justify-content: flex-start;
+  margin-top: 10%;
+
+  }
+  .cont_ser_top_border span{
+    margin-top:4px;
+    border: 1px solid #aaaa;
+  }
+  .stm_iconbox__text h5{
+    font-size: 26px;
+    line-height: 40px;
+    letter-spacing: -1.5px;
+    font-weight: 300;
+  }
+  .stm_iconbox__dots+p{
+    font-size: 14px;
+    color: #888888!important;
+  }
+  
+ 
 }
 .slider {
   position:relative;
