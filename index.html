@@ -630,21 +630,71 @@
                 </div>
             </div>
             <!-- 第五部分 ADVANTAGES -->
+            <div class="num_warp digital_scrolling">
+                <div class="number_info_box number_bg">
+                    <div class="number_cont">
+                        <div class="wpb_wrapper number_items">
+                            <h4><span style="color: #ffffff;">By Publishing in China, Partners might need to: travel, consume, and spend…</span></h4>
+                        </div>
+                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                <div class="wpb_column vc_column_container vc_col-sm-4 pearl_column_inner_7a9073f047a4ee018f6292b939ac7c3c" id="Evan_define_KM">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="wpb_num_1 stm-counter clearfix stm-counter_style_1   has_icon" style=" color: #ffffff !important"> <i class="icoSize stm-counter__icon fa fa-plane mtc" style="color: #ffffff"></i>
+                             <span id="productNumber" class="count-number fontSize50 stm-counter__value stm_mf mtc_a" style="color: #ffffff" data-to="142130260" data-speed="2500"></span>
+                            
+                                                <div
+                                                class="stm-counter__label" style="color: #ffffff">KM</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpb_column vc_column_container vc_col-sm-4 pearl_column_inner_441d83d5f21fd7926212c516a899938f" id="Evan_define_USD">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_num_1 stm-counter clearfix stm-counter_style_1   has_icon" style=" color: #ffffff !important"> <i class="icoSize stm-counter__icon fa fa-money mtc" style="color: #ffffff"></i>
+                             <span class="fontSize25 stm-counter__affix stm_mf" style="color: #ffffff">$</span>
+                             <span id="productNumber" class="count-number fontSize50 stm-counter__value stm_mf mtc_a" style="color: #ffffff" data-to="36053300" data-speed="2500"></span>
+                            
+                                            <div class="stm-counter__label" style="color: #ffffff">USD</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="wpb_column vc_column_container vc_col-sm-4 pearl_column_inner_fc642b998d6c185140ce4d8caed5e138" id="Evan_define_HRS">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper">
+                                        <div class="wpb_num_1 stm-counter clearfix stm-counter_style_1   has_icon" style=" color: #ffffff !important"> <i class="icoSize stm-counter__icon stmicon-med_time mtc" style="color: #ffffff"></i>
+                             <span id="productNumber" class="count-number fontSize50 stm-counter__value stm_mf mtc_a" style="color: #ffffff" data-to="160598" data-speed="2500"></span>
+                                        <div class="stm-counter__label" style="color: #ffffff">HRS</div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="paddingL6 wpb_text_column wpb_content_element ">
+                <div class="wpb_wrapper">
+                    <h4 style="text-align: right;"><span style="color: #ffffff;">&nbsp;We close the gap!</span></h4>
+        
+                </div>
+            </div>
         </div>
     <div class="footer"></div>
 
   <script src="./js/jquery/jquery.js" ></script>
   <script src="./js/swiper.js"></script>
+  <script src="./js/count.js"></script>
   <!-- <script src="./js/toogle.js"></script> -->
   <script type="text/javascript">
-
-//   导航选中切换
+//  导航选中切换
     $('.stm-navigation ul li').on('click',function(){
         $(this).siblings().removeClass('navActive'); 
         $(this).addClass('navActive'); 
     })
 
-
+//pc版本轮播切换
     $(".slider-container").ikSlider({
         speed: 500
     });
@@ -664,7 +714,22 @@
 		$('.slider-container').on('changeSlide.ikSlider', function(e) {
 		  changeActivePreview(e.currentSlide);
 		});
-		changeActivePreview(0)
+        changeActivePreview(0)
+    //数字动态加载
+    productNumber=function (){
+        var arr = [];
+        $('#productNumber li').each(function(i, dom) {
+            var iDom = $(dom).find('i'),
+                decimals = 0,
+                sum = iDom.data('sum');
+            //初始化传参，参数为上面注释中的参数    
+            arr.push(new CountUp(iDom.attr('id'), 0, sum, decimals, 4, {
+                useEasing: true,//效果
+                separator: ''//数字分隔符
+            }));
+            arr[i].start();
+        });
+    }();	
 	</script>
 </body>
 </html>
