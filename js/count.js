@@ -64,6 +64,7 @@ $.fn.countTo = function (options) {
         }
         function render(value) {
             var formattedValue = settings.formatter.call(self, value, settings);
+            formattedValue=(formattedValue || 0).toString().replace(/(\d)(?=(?:\d{3})+$)/g, '$1,');
             $self.html(formattedValue);
         }
         });
@@ -71,26 +72,29 @@ $.fn.countTo = function (options) {
     $.fn.countTo.defaults={
         from:0,               //数字开始的值
         to:0,                 //数字结束的值
-        speed:1000,           //设置步长的时间
+        speed:2500,           //设置步长的时间
         refreshInterval:100,  //隔间值
         decimals:0,           //显示小位数
         formatter: formatter, //渲染之前格式化
         onUpdate:null,        //每次更新前的回调方法
         onComplete:null       //完成更新的回调方法
     };
+    
     function formatter(value, settings){
         return value.toFixed(settings.decimals);
     }
     //自定义格式
-    $('.count-number').data('countToOptions',{
+    $('#productNumber').data('countToOptions',{
         formmatter:function(value, options){
             return value.toFixed(options.decimals).replace(/\B(?=(?:\d{3})+(?!\d))/g, ',');
         }
     });
     //定时器
-    $('#productNumber').each(count);
+    $('.timer').each(count);
     function count(options){
         var $this=$(this);
         options=$.extend({}, options||{}, $this.data('countToOptions')||{});
         $this.countTo(options);
     }
+  
+   
